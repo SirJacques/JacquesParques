@@ -1,0 +1,120 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Container for all content */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Album Artwork */
+.album-art {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Title and Artist Name */
+.title {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    font-weight: 700;
+}
+
+.artist {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Audio Player */
+.player {
+    margin: 20px 0;
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+}
+
+/* Streaming Platforms */
+.platforms {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.platforms a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #1db954; /* Spotify green */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.platforms a:hover {
+    background-color: #1ed760;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .album-art {
+        max-width: 300px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .artist {
+        font-size: 1.1em;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+
+    .platforms a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .album-art {
+        max-width: 350px;
+    }
+
+    .title {
+        font-size: 2.2em;
+    }
+
+    .artist {
+        font-size: 1.3em;
+    }
+}
