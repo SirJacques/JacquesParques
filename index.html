@@ -1,129 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Music Preview Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .album-art {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .title {
-            font-size: 32px;
-            margin-top: 20px;
-            font-weight: 700;
-        }
-
-        .artist {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #777;
-        }
-
-        .player {
-            margin-top: 20px;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .platforms {
-            margin-top: 30px;
-        }
-
-        .platforms a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            background-color: #1db954; /* Spotify green */
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .platforms a:hover {
-            background-color: #1ed760;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #999;
-        }
-
-        @media (max-width: 600px) {
-            .album-art {
-                max-width: 100%;
-            }
-
-            .title {
-                font-size: 24px;
-            }
-
-            .artist {
-                font-size: 16px;
-            }
-
-            audio {
-                width: 100%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of JacquesParques. Discover new Alternative Rock music, upcoming events, and more.">
+  <title>JacquesParques | Official Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    header {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00FFAB;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00FFAB;
+    }
+    section {
+      margin: 20px 0;
+      width: 90%;
+      max-width: 600px;
+    }
+    .music-links a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #333;
+      color: #00FFAB;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .music-links a:hover {
+      background-color: #00FFAB;
+      color: #121212;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #777;
+    }
+    .social-icons img {
+      width: 30px;
+      margin: 10px;
+      filter: brightness(0) invert(1);
+    }
+    h2 {
+      color: #00FFAB;
+    }
+    a {
+      color: #00FFAB;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Album Artwork -->
-        <img src="boxes.jpg" alt="Album Artwork" class="album-art">
+  <header>
+    <h1>JacquesParques</h1>
+    <p>New Alternative Rock Music Out Now</p>
+  </header>
 
-        <!-- Album Title and Artist -->
-        <div class="title">Album Title</div>
-        <div class="artist">Artist Name</div>
+  <section>
+    <h2>About Me</h2>
+    <p>Hi! I'm JacquesParques, an Alternative Rock artist. My music blends raw emotion with intricate guitar work and deep lyrics. Check out my latest tracks and follow me for updates.</p>
+  </section>
 
-        <!-- Audio Player -->
-        <div class="player">
-            <audio controls>
-                <source src="Take_a_breath_MIX_3.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- Streaming Platform Links -->
-        <div class="platforms">
-            <a href="#" target="_blank">Spotify</a>
-            <a href="#" target="_blank">Apple Music</a>
-            <a href="#" target="_blank">YouTube</a>
-            <a href="#" target="_blank">Deezer</a>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            © 2024 JacquesParques. All Rights Reserved.
-        </div>
+  <section>
+    <h2>Listen Now</h2>
+    <div class="music-links">
+      <a href="[Spotify URL]" target="_blank">Listen on Spotify</a>
+      <a href="[Apple Music URL]" target="_blank">Listen on Apple Music</a>
+      <a href="[SoundCloud URL]" target="_blank">Listen on SoundCloud</a>
     </div>
+  </section>
+
+  <section>
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="[Instagram URL]" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="[YouTube URL]" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+      </a>
+      <a href="[Twitter URL]" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 JacquesParques. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
